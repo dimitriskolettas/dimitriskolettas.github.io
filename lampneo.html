@@ -1,0 +1,36 @@
+﻿<html lang='el'>
+<head>
+<style>
+body {
+font-family: sans-serif;
+}
+img{
+cursor:pointer;}
+</style>
+<script>
+var on=0
+function lighton() {
+document.querySelector('#myimage').src = "bulbon.png";
+}
+function lightoff() {
+document.querySelector('#myimage').src = "bulboff.png";
+}
+function anapsesvise()
+{
+	if (on==0) 
+	{
+		lighton();
+		on=1;
+	} else {
+		lightoff();
+		on=0;
+	}
+}
+</script>
+</head>
+<body>
+<img id="myimage" onclick="anapsesvise()" src="bulboff.png"/>
+<p>Πατήστε στη λάμπα!</p>
+<p>Άσκηση: αλλάξτε τον κώδικα ώστε να ανάβει/ σβήνει <br>όταν πατάμε στη λάμπα</p>
+</body>
+</html>
