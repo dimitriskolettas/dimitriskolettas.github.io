@@ -1,0 +1,22 @@
+﻿<html lang='el'>
+<head>
+<style>
+body {
+font-family: sans-serif;
+}
+</style>
+<script>
+function lighton() {
+document.querySelector('#myimage').src = "bulbon.png";
+}
+function lightoff() {
+document.querySelector('#myimage').src = "bulboff.png";
+}
+</script>
+</head>
+<body>
+<img id="myimage" onclick="lighton()" onmouseleave="lightoff()" src="bulboff.png"/>
+<p>Πατήστε στη λάμπα!</p>
+<p>Άσκηση: αλλάξτε τον κώδικα ώστε να ανάβει/ σβήνει <br>όταν πατάμε στη λάμπα</p>
+</body>
+</html>
